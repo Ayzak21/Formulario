@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3ac2b7;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+h2 {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.formulario {
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+.formulario th,
+.formulario td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.formulario th {
+    background-color: #f9f9f9;
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}

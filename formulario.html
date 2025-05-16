@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <strong>Formulario para Cliente Web</strong>
+            <img src="usuario.png" alt="user_icon">
+        </h1>
+        
+        <h2>Datos Personales</h2>
+        
+        <form class="formulario1" action="" method="get">
+            <table class="formulario" border="0">
+                <tr>
+                    <th>
+                        <p>
+                            Nombres: <input type="text" name="name_control" autofocus required />
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            Apellidos: <input type="text" name="subname_control" required />
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            Numero de Telefono: <input type="text" maxlength="10" placeholder="Ingrese su telefono"
+                                name="name" required />
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            Lugar de Nacimiento: <input type="text" name="born_control" required />
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <p>
+                            Edad: <input type="number" min="1" name="age_control" placeholder="Ingrese su Edad" required />
+                        </p>
+                    </th>
+                    <th>
+                        <p>
+                            Cedula: <input type="text" maxlength="10" name="dni_control" placeholder="Ingrese su Cedula" required />
+                        </p>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Fecha de Nacimiento: <input type="date" name="date_control" required />
+                    </th>
+                </tr>
+            </table>
+            
+            <div style="text-align: center; margin-top: 20px;">
+                <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
