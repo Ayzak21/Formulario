@@ -91,3 +91,26 @@ input[type="date"] {
     box-sizing: border-box;
     margin-top: 5px;
 }
+
+/* Estilos para campos con error de validación */
+input:invalid {
+    border-color: #ffdddd;
+}
+
+.error-mensaje {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Animación para resaltar errores */
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-5px);}
+    20%, 40%, 60%, 80% {transform: translateX(5px);}
+}
+
+.shake {
+    animation: shake 0.5s;
+}
